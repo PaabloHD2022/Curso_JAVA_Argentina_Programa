@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="entidad">
+  <ClassDiagramComponents>
+    <Class name="Electrodomestico" package="entidad" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="package"/>
+        <Field name="precio" type="double" visibility="protected"/>
+        <Field name="color" type="String" visibility="protected"/>
+        <Field name="consumoEnergetico" type="char" visibility="protected"/>
+        <Field name="peso" type="double" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="color"/>
+          <Argument type="char" name="consumoEnergetico"/>
+          <Argument type="double" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getconsumoEnergetico" returnType="char" visibility="public"/>
+        <Method name="setconsumoEnergetico" returnType="void" visibility="public">
+          <Argument type="char" name="consumoEnergetico"/>
+        </Method>
+        <Method name="getPeso" returnType="double" visibility="public"/>
+        <Method name="setPeso" returnType="void" visibility="public">
+          <Argument type="double" name="peso"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Lavadora" package="entidad" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="carga" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="carga"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="carga"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="color"/>
+          <Argument type="char" name="consumoEnergetico"/>
+          <Argument type="double" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCarga" returnType="int" visibility="public"/>
+        <Method name="setCarga" returnType="void" visibility="public">
+          <Argument type="int" name="carga"/>
+        </Method>
+        <Method name="getLeer" returnType="Scanner" visibility="public"/>
+        <Method name="setLeer" returnType="void" visibility="public">
+          <Argument type="Scanner" name="leer"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getConsumoEnergetico" returnType="char" visibility="public"/>
+        <Method name="setConsumoEnergetico" returnType="void" visibility="public">
+          <Argument type="char" name="consumoEnergetico"/>
+        </Method>
+        <Method name="getPeso" returnType="double" visibility="public"/>
+        <Method name="setPeso" returnType="void" visibility="public">
+          <Argument type="double" name="peso"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="entidad.Lavadora" target="entidad.Electrodomestico"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

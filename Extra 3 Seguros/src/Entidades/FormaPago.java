@@ -1,0 +1,5 @@
+package Entidades;
+
+public enum FormaPago {
+    EFECTIVO,CONTADO,CUOTAS,CREDITO,TRANSFERENCIA,DEBITO_AUTOMATICO
+}

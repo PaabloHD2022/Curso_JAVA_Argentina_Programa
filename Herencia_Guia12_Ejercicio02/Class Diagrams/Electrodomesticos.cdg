@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Electrodomesticos">
+  <ClassDiagramComponents>
+    <Class name="Electrodomestico" package="" visibility="protected" xPosition="285.0" yPosition="79.0">
+      <Fields>
+        <Field name="precio" type="Int" visibility="protected"/>
+        <Field name="color" type="String" visibility="protected"/>
+        <Field name="consumoEnergetico" type="char" visibility="protected"/>
+        <Field name="peso" type="Int" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="comprobarConsumoEnergetico" returnType="void" visibility="public"/>
+        <Method name="comprobarColor" returnType="void" visibility="public"/>
+        <Method name="crearElectrodomestico" returnType="void" visibility="public"/>
+        <Method name="precioFinal" returnType="void" visibility="public"/>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lavadora" package="" visibility="public" xPosition="501.0" yPosition="410.0">
+      <Fields>
+        <Field name="carga" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearLavadora" returnType="void" visibility="public"/>
+        <Method name="precioFinal" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Televisor" package="" visibility="public" xPosition="155.0" yPosition="391.0">
+      <Fields>
+        <Field name="resolucion" type="int" visibility="protected"/>
+        <Field name="sintonizadorTDT" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearTelevisor" returnType="void" visibility="public"/>
+        <Method name="precioFinal" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="1" source="Televisor" target="Electrodomestico" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="2" source="Lavadora" target="Electrodomestico" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

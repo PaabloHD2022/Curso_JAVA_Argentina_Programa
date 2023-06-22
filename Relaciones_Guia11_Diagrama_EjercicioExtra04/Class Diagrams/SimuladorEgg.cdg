@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SimuladorEgg">
+  <ClassDiagramComponents>
+    <Class name="Alumno" package="" visibility="public" xPosition="355.0" yPosition="172.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="dni" type="int" visibility="private"/>
+        <Field name="votosRecibidos" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Simulador" package="" visibility="public" xPosition="632.0" yPosition="172.0">
+      <Fields>
+        <Field name="Alumnos" type="List" visibility="private"/>
+        <Field name="Dnis" type="List" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearNombreAlumno" returnType="void" visibility="public"/>
+        <Method name="generarDnis" returnType="void" visibility="public"/>
+        <Method name="crearAlumnoDni" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Voto" package="" visibility="public" xPosition="956.0" yPosition="211.0">
+      <Fields>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
